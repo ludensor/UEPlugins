@@ -1,0 +1,15 @@
+/NOLOGO
+/errorReport:prompt
+/MACHINE:x64
+/SUBSYSTEM:WINDOWS
+/DEF
+/NAME:"UnrealEditor-CommonBinkMediaPlayer-Win64-DebugGame.dll"
+/IGNORE:4221
+/NODEFAULTLIB
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\UnrealEd\SharedPCH.UnrealEd.Project.NonOptimized.ValApi.Cpp20.h.obj"
+"D:\LyraStarterGame\Plugins\CommonBinkMediaPlayer\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CommonBinkMediaPlayer\CommonBinkMediaPlayer.cpp.obj"
+"D:\LyraStarterGame\Plugins\CommonBinkMediaPlayer\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CommonBinkMediaPlayer\CommonBinkMediaPlayerModule.cpp.obj"
+"D:\LyraStarterGame\Plugins\CommonBinkMediaPlayer\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CommonBinkMediaPlayer\CommonBinkMediaPlayer.gen.cpp.obj"
+"D:\LyraStarterGame\Plugins\CommonBinkMediaPlayer\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CommonBinkMediaPlayer\CommonBinkMediaPlayer.init.gen.cpp.obj"
+"..\Intermediate\Build\Win64\x64\UnrealEditor\Development\Default.rc2.res"
+/OUT:"D:\LyraStarterGame\Plugins\CommonBinkMediaPlayer\Intermediate\Build\Win64\x64\UnrealEditor\DebugGame\CommonBinkMediaPlayer\UnrealEditor-CommonBinkMediaPlayer-Win64-DebugGame.lib"

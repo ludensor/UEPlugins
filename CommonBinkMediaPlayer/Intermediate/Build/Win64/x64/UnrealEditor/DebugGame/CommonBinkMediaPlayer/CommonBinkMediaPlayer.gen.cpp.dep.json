@@ -1,0 +1,30 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "d:\\lyrastartergame\\plugins\\commonbinkmediaplayer\\intermediate\\build\\win64\\unrealeditor\\inc\\commonbinkmediaplayer\\uht\\commonbinkmediaplayer.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "d:\\unrealengine\\engine\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\unrealed\\sharedpch.unrealed.project.nonoptimized.valapi.cpp20.h.pch",
+        "Includes": [
+            "d:\\lyrastartergame\\plugins\\commonbinkmediaplayer\\intermediate\\build\\win64\\x64\\unrealeditor\\debuggame\\commonbinkmediaplayer\\definitions.commonbinkmediaplayer.h",
+            "d:\\lyrastartergame\\plugins\\commonbinkmediaplayer\\source\\commonbinkmediaplayer\\public\\commonbinkmediaplayer.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\umg\\public\\components\\widget.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\fieldnotification\\public\\fieldnotificationdeclaration.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\fieldnotification\\public\\ifieldnotificationclassdescriptor.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\fieldnotification\\public\\inotifyfieldvaluechanged.h",
+            "d:\\unrealengine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\fieldnotification\\uht\\inotifyfieldvaluechanged.generated.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\umg\\public\\components\\visual.h",
+            "d:\\unrealengine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\visual.generated.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\umg\\public\\components\\slatewrappertypes.h",
+            "d:\\unrealengine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\slatewrappertypes.generated.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\umg\\public\\slate\\widgettransform.h",
+            "d:\\unrealengine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgettransform.generated.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\umg\\public\\blueprint\\widgetnavigation.h",
+            "d:\\unrealengine\\engine\\source\\runtime\\slatecore\\public\\types\\navigationmetadata.h",
+            "d:\\unrealengine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widgetnavigation.generated.h",
+            "d:\\unrealengine\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\umg\\uht\\widget.generated.h",
+            "d:\\lyrastartergame\\plugins\\commonbinkmediaplayer\\intermediate\\build\\win64\\unrealeditor\\inc\\commonbinkmediaplayer\\uht\\commonbinkmediaplayer.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
