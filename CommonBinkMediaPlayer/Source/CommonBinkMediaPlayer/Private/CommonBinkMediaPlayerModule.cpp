@@ -25,5 +25,5 @@ void FCommonBinkMediaPlayerModule::ShutdownModule()
 }
 
 #undef LOCTEXT_NAMESPACE
-	
+
 IMPLEMENT_MODULE(FCommonBinkMediaPlayerModule, CommonBinkMediaPlayer)
