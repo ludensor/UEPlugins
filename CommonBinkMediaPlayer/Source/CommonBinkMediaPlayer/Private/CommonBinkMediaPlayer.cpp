@@ -8,6 +8,7 @@
 
 UCommonBinkMediaPlayer::UCommonBinkMediaPlayer(const FObjectInitializer& ObjectInitializer)
 	: Super(ObjectInitializer)
+	, bMatchSize(false)
 {
 
 }
@@ -19,6 +20,7 @@ void UCommonBinkMediaPlayer::PostInitProperties()
 	if (!IsTemplate())
 	{
 		MediaPlayer = NewObject<UBinkMediaPlayer>(this);
+		MediaPlayer->OnMediaChanged().AddUObject(this, &ThisClass::HandleMediaPlayerChangedEvent);
 
 		MediaTexture = NewObject<UBinkMediaTexture>(this);
 		MediaTexture->SetMediaPlayer(MediaPlayer);
@@ -78,7 +80,10 @@ void UCommonBinkMediaPlayer::Close()
 
 void UCommonBinkMediaPlayer::Play()
 {
-	MediaPlayer->Play();
+	if (MediaPlayer->IsReady() && !MediaPlayer->IsPlaying())
+	{
+		MediaPlayer->Play();
+	}
 }
 
 void UCommonBinkMediaPlayer::Pause()
@@ -125,4 +130,16 @@ void UCommonBinkMediaPlayer::ReleaseSlateResources(bool bReleaseChildren)
 	Super::ReleaseSlateResources(bReleaseChildren);
 
 	MyImage.Reset();
+}
+
+void UCommonBinkMediaPlayer::HandleMediaPlayerChangedEvent()
+{
+	if (bMatchSize)
+	{
+		MediaBrush.ImageSize = MediaPlayer->GetDimensions();
+		if (MyImage.IsValid())
+		{
+			MyImage->InvalidateImage();
+		}
+	}
 }

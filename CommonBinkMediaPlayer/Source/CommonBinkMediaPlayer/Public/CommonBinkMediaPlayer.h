@@ -71,9 +71,14 @@ private:
 	virtual TSharedRef<SWidget> RebuildWidget() override final;
 	virtual void ReleaseSlateResources(bool bReleaseChildren) override final;
 
+	void HandleMediaPlayerChangedEvent();
+
 private:
 	UPROPERTY(EditAnywhere, Category = "Bink Media Player")
 	TObjectPtr<UBinkMediaPlayer> Media;
+
+	UPROPERTY(EditAnywhere, Category = "Bink Media Player")
+	bool bMatchSize;
 
 	UPROPERTY(Transient)
 	TObjectPtr<UBinkMediaPlayer> MediaPlayer;

@@ -631,6 +631,10 @@ struct Z_Construct_UClass_UCommonBinkMediaPlayer_Statics
 		{ "Category", "Bink Media Player" },
 		{ "ModuleRelativePath", "Public/CommonBinkMediaPlayer.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_bMatchSize_MetaData[] = {
+		{ "Category", "Bink Media Player" },
+		{ "ModuleRelativePath", "Public/CommonBinkMediaPlayer.h" },
+	};
 	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_MediaPlayer_MetaData[] = {
 		{ "ModuleRelativePath", "Public/CommonBinkMediaPlayer.h" },
 	};
@@ -642,6 +646,8 @@ struct Z_Construct_UClass_UCommonBinkMediaPlayer_Statics
 	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_Media;
+	static void NewProp_bMatchSize_SetBit(void* Obj);
+	static const UECodeGen_Private::FBoolPropertyParams NewProp_bMatchSize;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MediaPlayer;
 	static const UECodeGen_Private::FObjectPropertyParams NewProp_MediaTexture;
 	static const UECodeGen_Private::FStructPropertyParams NewProp_MediaBrush;
@@ -670,11 +676,17 @@ struct Z_Construct_UClass_UCommonBinkMediaPlayer_Statics
 	static const UECodeGen_Private::FClassParams ClassParams;
 };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_Media = { "Media", nullptr, (EPropertyFlags)0x0144000000000001, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCommonBinkMediaPlayer, Media), Z_Construct_UClass_UBinkMediaPlayer_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_Media_MetaData), NewProp_Media_MetaData) };
+void Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_bMatchSize_SetBit(void* Obj)
+{
+	((UCommonBinkMediaPlayer*)Obj)->bMatchSize = 1;
+}
+const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_bMatchSize = { "bMatchSize", nullptr, (EPropertyFlags)0x0040000000000001, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(UCommonBinkMediaPlayer), &Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_bMatchSize_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bMatchSize_MetaData), NewProp_bMatchSize_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_MediaPlayer = { "MediaPlayer", nullptr, (EPropertyFlags)0x0144000000002000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCommonBinkMediaPlayer, MediaPlayer), Z_Construct_UClass_UBinkMediaPlayer_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MediaPlayer_MetaData), NewProp_MediaPlayer_MetaData) };
 const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_MediaTexture = { "MediaTexture", nullptr, (EPropertyFlags)0x0144000000002000, UECodeGen_Private::EPropertyGenFlags::Object | UECodeGen_Private::EPropertyGenFlags::ObjectPtr, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCommonBinkMediaPlayer, MediaTexture), Z_Construct_UClass_UBinkMediaTexture_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MediaTexture_MetaData), NewProp_MediaTexture_MetaData) };
 const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_MediaBrush = { "MediaBrush", nullptr, (EPropertyFlags)0x0040000000002000, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UCommonBinkMediaPlayer, MediaBrush), Z_Construct_UScriptStruct_FSlateBrush, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_MediaBrush_MetaData), NewProp_MediaBrush_MetaData) }; // 1704263518
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_Media,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_bMatchSize,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_MediaPlayer,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_MediaTexture,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UCommonBinkMediaPlayer_Statics::NewProp_MediaBrush,
@@ -720,10 +732,10 @@ UCommonBinkMediaPlayer::~UCommonBinkMediaPlayer() {}
 struct Z_CompiledInDeferFile_FID_LyraStarterGame_Plugins_CommonBinkMediaPlayer_Source_CommonBinkMediaPlayer_Public_CommonBinkMediaPlayer_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UCommonBinkMediaPlayer, UCommonBinkMediaPlayer::StaticClass, TEXT("UCommonBinkMediaPlayer"), &Z_Registration_Info_UClass_UCommonBinkMediaPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCommonBinkMediaPlayer), 2119398134U) },
+		{ Z_Construct_UClass_UCommonBinkMediaPlayer, UCommonBinkMediaPlayer::StaticClass, TEXT("UCommonBinkMediaPlayer"), &Z_Registration_Info_UClass_UCommonBinkMediaPlayer, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UCommonBinkMediaPlayer), 440193667U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LyraStarterGame_Plugins_CommonBinkMediaPlayer_Source_CommonBinkMediaPlayer_Public_CommonBinkMediaPlayer_h_4009354737(TEXT("/Script/CommonBinkMediaPlayer"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_LyraStarterGame_Plugins_CommonBinkMediaPlayer_Source_CommonBinkMediaPlayer_Public_CommonBinkMediaPlayer_h_4294904290(TEXT("/Script/CommonBinkMediaPlayer"),
 	Z_CompiledInDeferFile_FID_LyraStarterGame_Plugins_CommonBinkMediaPlayer_Source_CommonBinkMediaPlayer_Public_CommonBinkMediaPlayer_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_LyraStarterGame_Plugins_CommonBinkMediaPlayer_Source_CommonBinkMediaPlayer_Public_CommonBinkMediaPlayer_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);
