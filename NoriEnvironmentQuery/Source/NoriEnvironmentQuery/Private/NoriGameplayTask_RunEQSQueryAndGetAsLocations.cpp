@@ -58,6 +58,7 @@ void UNoriGameplayTask_RunEQSQueryAndGetAsLocations::OnQueryFinished(TSharedPtr<
 	}
 
 	TArray<FVector> DesiredLocations;
+	DesiredLocations.Reserve(MaxCount);
 	if (MaxCount > 0)
 	{
 		const int32 ClampedCount = FMath::Min(MaxCount, Locations.Num());
